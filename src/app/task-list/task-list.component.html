@@ -1,0 +1,24 @@
+<div class="task-list-container">
+  <div class="no-tareas" *ngIf="tareas.length === 0">
+    <p>📭 No hay tareas registradas</p>
+  </div>
+
+  <ul *ngIf="tareas.length > 0">
+    <li *ngFor="let tarea of tareas" class="task-item" [ngClass]="{'completada': tarea.completada}">
+      <div class="task-content">
+        <input 
+          type="checkbox" 
+          [checked]="tarea.completada"
+          (change)="completar(tarea.id)"
+          class="checkbox">
+        <span class="task-text">{{ tarea.texto }}</span>
+      </div>
+      <button 
+        class="btn-eliminar" 
+        (click)="eliminar(tarea.id)"
+        title="Eliminar tarea">
+        🗑️
+      </button>
+    </li>
+  </ul>
+</div>

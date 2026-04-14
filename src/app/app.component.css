@@ -1,0 +1,35 @@
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: linear-gradient(135deg, #fff9c4 0%, #f0f4c3 100%);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  color: #6d4c41;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.stats {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #a1887f;
+}
+
+.total-tareas {
+  color: #6d4c41;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.total-tareas strong {
+  color: #795548;
+  font-size: 1.3em;
+}

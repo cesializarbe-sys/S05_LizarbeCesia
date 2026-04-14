@@ -1,0 +1,18 @@
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fce4ec 0%, #e0bee7 25%, #c5cae9 50%, #bbdefb 75%, #b3e5fc 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(135deg, #fce4ec 0%, #e0bee7 25%, #c5cae9 50%, #bbdefb 75%, #b3e5fc 100%);
+}

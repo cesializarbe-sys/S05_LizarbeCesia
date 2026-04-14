@@ -1,0 +1,11 @@
+<div class="input-container">
+  <input 
+    [(ngModel)]="nuevaTarea" 
+    placeholder="Escribe una tarea"
+    (focus)="limpiarError()"
+    (keyup.enter)="agregar()">
+  <button (click)="agregar()">Agregar</button>
+  <div class="error-message" *ngIf="mensajeError">
+    {{ mensajeError }}
+  </div>
+</div>
